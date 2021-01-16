@@ -51,7 +51,7 @@
                   <configuration>
                      <projectFile>calculator-soapui-project.xml</projectFile>
                      <junitReport>true</junitReport>
-                     <outputFolder>${baseDir}/target/surefire-reports</outputFolder>
+                     <outputFolder>/target/surefire-reports</outputFolder>
                      <printReport>true</printReport>
                      <exportAll>true</exportAll>
                      <testFailIgnore>true</testFailIgnore>
@@ -67,7 +67,7 @@
         <artifactId>maven-site-plugin</artifactId>
         <version>3.7.1</version>
         <configuration>
-          <outputDirectory>${basedir}/target/site-reports</outputDirectory>
+          <outputDirectory>/target/site-reports</outputDirectory>
         </configuration>
       </plugin>
       </plugins>
