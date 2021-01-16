@@ -22,7 +22,7 @@
             <dependencies>
                <dependency>
                   <groupId>com.smartbear.soapui</groupId>
-                  <artifactId>aoapui</artifactId>
+                  <artifactId>soapui</artifactId>
                   <version>5.5.0</version>
                   <exclusions>
                      <exclusion>
