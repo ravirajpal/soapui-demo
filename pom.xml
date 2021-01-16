@@ -17,8 +17,8 @@
         <plugins>
             <plugin>
                 <groupId>com.smartbear.soapui</groupId>
-                <artifactId>soapui-pro-maven-plugin</artifactId>
-                <version>4.6.1</version>
+                <artifactId>soapui-maven-plugin</artifactId>
+                <version>5.5.0</version>
                 <dependencies>
                     <dependency>
                         <groupId>mysql</groupId>
@@ -34,6 +34,10 @@
                         </goals>
                         <configuration>
                             <projectFile>calculator-soapui-project.xml</projectFile>
+                            <junitReport>true</junitReport>
+				            <outputFolder>${baseDir}/target/surefire-reports</outputFolder>
+				            <printReport>true</printReport>
+				            <testFailIgnore>true</testFailIgnore>
                             <projectProperties>
                                 <value>message=Hello World!</value>
                             </projectProperties>
