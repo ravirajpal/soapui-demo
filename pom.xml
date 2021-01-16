@@ -51,7 +51,7 @@
                   <configuration>
                      <projectFile>calculator-soapui-project.xml</projectFile>
                      <junitReport>true</junitReport>
-                     <outputFolder>/target/surefire-reports</outputFolder>
+                     <outputFolder>/target/surefire-reports/</outputFolder>
                      <printReport>true</printReport>
                      <exportAll>true</exportAll>
                      <testFailIgnore>true</testFailIgnore>
