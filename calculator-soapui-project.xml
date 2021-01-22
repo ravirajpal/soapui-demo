@@ -539,10 +539,10 @@ def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
 def projectPath = groovyUtils.projectPath
 // Get project name
 def projectName = runner.getProject().getName()
-log.info projectPath
+log.info ${basedir}
 log.info projectName
 
-def sparkReporter = new ExtentSparkReporter(projectPath + "/my-report/extent.html");
+def sparkReporter = new ExtentSparkReporter(${basedir} + "/my-report/extent.html");
 def extent = new ExtentReports();
 
 
