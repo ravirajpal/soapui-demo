@@ -536,13 +536,13 @@ import com.aventstack.extentreports.markuputils.*;
 // Create GroovyUtils
 def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
 // Get the project path
-def projectPath = groovyUtils.projectPath
+def projectPath = groovyUtils.projectPath.toString()
 // Get project name
 def projectName = runner.getProject().getName()
-log.info ${basedir}
+log.info projectPath
 log.info projectName
 
-def sparkReporter = new ExtentSparkReporter(${basedir} + "/my-report/extent.html");
+def sparkReporter = new ExtentSparkReporter(projectPath + "/my-report/extent.html");
 def extent = new ExtentReports();
 
 
