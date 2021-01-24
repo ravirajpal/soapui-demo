@@ -80,7 +80,7 @@
         <artifactId>maven-surefire-report-plugin</artifactId>
         <version>3.0.0-M4</version>
         <configuration>
-          <!--outputDirectory>${basedir}/target/surefire-reports</outputDirectory-->
+          <outputDirectory>${basedir}\target\surefire-reports</outputDirectory>
 		  <testFailureIgnore>true</testFailureIgnore>
         </configuration>
       </plugin>
