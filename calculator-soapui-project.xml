@@ -543,7 +543,7 @@ log.info projectPath
 log.info projectName
 log.info runner.getProject().getPath()
 
-def sparkReporter = new ExtentSparkReporter("/target/surefire-reports/extent.html");
+def sparkReporter = new ExtentSparkReporter(System.getProperty('user.dir') + "\\target/surefire-reports/extent.html");
 def extent = new ExtentReports();
 
 
