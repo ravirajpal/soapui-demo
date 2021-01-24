@@ -541,6 +541,7 @@ def projectPath = groovyUtils.projectPath.toString()
 def projectName = runner.getProject().getName()
 log.info projectPath
 log.info projectName
+log.info runner.getProject().getPath()
 
 def sparkReporter = new ExtentSparkReporter(projectPath + "/my-report/extent.html");
 def extent = new ExtentReports();
